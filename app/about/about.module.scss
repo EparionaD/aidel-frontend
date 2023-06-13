@@ -1,0 +1,33 @@
+@import '@/styles/_styles.scss';
+
+.about {
+  background-color: $colorFondo;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    @include desktop {
+      padding: 2rem 3rem;
+    }
+    @include desktop-large {
+      padding: 3rem 4.5rem;
+    }
+    @include desktop-xlarge {
+      padding: 4rem 6rem;
+    }
+    @include desktop-xlarge {
+      padding: 5rem 7.5rem;
+    }
+  }
+  &__paragraph {
+    letter-spacing: 0.1rem;
+    @include desktop {
+      font-size: 1.1rem;
+    }
+    @include desktop-xxlarge {
+      font-size: 1.2rem;
+      width: 70%;
+    }
+  }
+}

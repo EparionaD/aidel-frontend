@@ -1,0 +1,59 @@
+@import '@/styles/_styles.scss';
+
+.hero {
+  //   background-image: url('../../public/assets/image/about.jpg');
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 1rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  @include desktop {
+    padding: 1rem 3rem;
+  }
+  @include desktop-large {
+    padding: 1rem 4.5rem;
+  }
+  @include desktop-xlarge {
+    padding: 1rem 6rem;
+  }
+  @include desktop-xlarge {
+    padding: 1rem 7.5rem;
+  }
+  &__title {
+    position: relative;
+    font-size: 1.5rem;
+    color: $colorFondo;
+    z-index: 4;
+    background-color: rgba($colorFondo, 0.1);
+    padding: 0.3rem 1rem;
+    border-radius: 3px;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    font-family: var(--font-madurai);
+    width: fit-content;
+    @include desktop-large {
+      font-size: 1.7rem;
+    }
+    @include desktop-xxlarge {
+      font-size: 2rem;
+    }
+    &_texto {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}

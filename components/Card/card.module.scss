@@ -1,0 +1,48 @@
+@import '@/styles/_styles.scss';
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 3%;
+    padding: 1rem;
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 1rem 3rem;
+      margin-top: 2%;
+    }
+    @include desktop-large {
+      padding: 1rem 4.5rem;
+    }
+    @include desktop-xlarge {
+      padding: 1rem 7.5rem;
+    }
+  }
+  &__imageContainer {
+    height: 75%;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+  }
+  &__image {
+    object-fit: contain;
+  }
+  &__textContainer {
+    padding: 1rem;
+    background-color: $colorFondoClaro;
+    height: 25%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  &__text {
+    text-transform: capitalize;
+    font-family: var(--font-roboto);
+  }
+}

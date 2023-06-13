@@ -1,0 +1,24 @@
+@import '@/styles/_styles.scss';
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  @include desktop {
+    padding: 1.5rem 3rem;
+  }
+  @include desktop-large {
+    padding: 1.5rem 4.5rem;
+  }
+  @include desktop-xlarge {
+    padding: 1.5rem 7.5rem;
+  }
+  &__button {
+    background-color: $colorRojo;
+    padding: 0.5rem 1.5rem;
+    color: $colorFondo;
+    border-radius: 8px;
+    text-transform: capitalize;
+  }
+}

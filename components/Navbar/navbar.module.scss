@@ -1,0 +1,127 @@
+@import '@/styles/_styles.scss';
+
+.nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: var(--font-roboto);
+  @include desktop {
+    padding: 1rem 3rem;
+  }
+  @include desktop-large {
+    padding: 1rem 4.5rem;
+  }
+  @include desktop-xlarge {
+    padding: 1rem 6rem;
+  }
+  @include desktop-xxlarge {
+    padding: 1rem 7.5rem;
+  }
+  &__containerLogo {
+    width: 100px;
+    @include desktop {
+      width: 120px;
+    }
+    @include desktop-large {
+      width: 130px;
+    }
+    @include desktop-xlarge {
+      width: 140px;
+    }
+    @include desktop-xxlarge {
+      width: 150px;
+    }
+  }
+  &__containerLinks {
+    opacity: 0;
+    height: 0vh;
+    width: 100%;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @include desktop {
+      opacity: 1;
+      height: fit-content;
+      width: inherit;
+      flex-direction: row;
+      align-self: center;
+      gap: 1rem;
+    }
+
+    &_active {
+      opacity: 1;
+      height: 40vh;
+      padding: 1rem 0;
+    }
+  }
+  &__iconMenu {
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-self: center;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $colorRojo;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+  &__link {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 500;
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $colorVerdeClaro;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -5px;
+      transition: 0.3s;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+    &_active {
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: $colorVerdeClaro;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+      }
+    }
+    @include desktop {
+      font-size: 1rem;
+    }
+    @include desktop-large {
+      font-size: 1.1rem;
+    }
+    @include desktop-xlarge {
+      font-size: 1.2rem;
+    }
+    @include desktop-xxlarge {
+      font-size: 1.3rem;
+    }
+  }
+  &__movil {
+    @include desktop {
+      display: none;
+    }
+  }
+  &__pc {
+    display: none;
+    @include desktop {
+      display: inherit;
+    }
+  }
+}
