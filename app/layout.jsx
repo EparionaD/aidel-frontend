@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
             Routes.INSTITUTION,
             Routes.INTERVENTION,
             Routes.GEOPORTAL,
+            Routes.REPOSITORIO,
           ]}
         />
         {children}

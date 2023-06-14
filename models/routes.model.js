@@ -16,4 +16,8 @@ export const Routes = {
     path: '/geoportal',
     name: 'Geoportal',
   },
+  REPOSITORIO: {
+    path: '/repositorio',
+    name: 'Repositorio',
+  },
 };

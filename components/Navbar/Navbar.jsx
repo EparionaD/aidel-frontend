@@ -12,7 +12,6 @@ import { SlMenu } from 'react-icons/sl';
 const Navbar = ({ pathNames }) => {
   const [menu, setMenu] = useState(false);
   const router = usePathname();
-  console.log(router);
 
   const toogleMenu = () => {
     setMenu(!menu);
