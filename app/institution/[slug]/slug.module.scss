@@ -1,0 +1,49 @@
+@import '@/styles/_styles.scss';
+
+.details {
+  &__container {
+    padding: 1rem;
+    background-color: $colorFondo;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    @include desktop-xxlarge {
+      font-size: 1.5rem;
+      padding: 2rem 16rem;
+      grid-template-columns: 4fr 2fr;
+      gap: 1.5rem;
+    }
+  }
+  &__social {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+}
+
+.data {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @include desktop-xxlarge {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__title {
+    color: $colorFondoOscuro;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--font-madurai);
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+  }
+  &__paragraph {
+    padding-left: 1rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+  }
+}

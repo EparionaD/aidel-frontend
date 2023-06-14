@@ -9,7 +9,7 @@ const nextConfig = {
       // },
       {
         protocol: 'https',
-        hostname: 'aidel-beta-eparionad.vercel.app',
+        hostname: 'aidel-dev-app-c5t5b.ondigitalocean.app',
         port: '',
       },
     ],

@@ -21,7 +21,6 @@ const Card = ({ institutions }) => {
           <div className={style.card__imageContainer}>
             <Image
               src={`${urlApiDeploy}${institution.attributes.logo.data.attributes.url}`}
-              // src={`${institution.attributes.logo.data.attributes.url}`}
               width={350}
               height={400}
               alt={institution.attributes.nombre}

@@ -20,5 +20,13 @@
     color: $colorFondo;
     border-radius: 8px;
     text-transform: capitalize;
+    border: 1px solid $colorRojo;
+    transition: all ease-in-out 0.3s;
+    overflow: hidden;
+    &:hover {
+      background-color: white;
+      color: $colorRojo;
+      border: 1px solid $colorRojo;
+    }
   }
 }
