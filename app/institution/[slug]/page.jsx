@@ -18,7 +18,7 @@ const Slug = async ({ params }) => {
   return (
     <main>
       {institution.map((insti) => (
-        <article>
+        <article key={insti.attributes.nombre}>
           <Hero
             text={false}
             bground={`${urlApi}${insti.attributes.logo.data.attributes.url}`}

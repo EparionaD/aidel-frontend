@@ -15,8 +15,8 @@ const Home = () => {
         <div className={home.home__hero}>
           <p className={home.home__title}>aidel</p>
           <p className={home.home__description}>
-            "Utilizar la inteligencia y el análisis de datos para impulsar el
-            crecimiento económico sostenible"
+            &quot;Utilizar la inteligencia y el análisis de datos para impulsar
+            el crecimiento económico sostenible&quot;
           </p>
           <div className={home.home__containerIcons}>
             <BsFillBuildingsFill
