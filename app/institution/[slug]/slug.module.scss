@@ -7,32 +7,39 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    @include desktop {
+      grid-template-columns: 4fr 2fr;
+      gap: 1.5rem;
+      padding: 1rem 3rem;
+    }
     @include desktop-xxlarge {
       font-size: 1.5rem;
       padding: 2rem 16rem;
-      grid-template-columns: 4fr 2fr;
-      gap: 1.5rem;
     }
   }
   &__social {
     background-color: white;
     padding: 1.5rem;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  &__responsable {
+    color: $colorFondoOscuro;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
   }
 }
 
 .data {
-  background-color: white;
+  // background-color: white;
   padding: 1.5rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  @include desktop-xxlarge {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
   &__title {
     color: $colorFondoOscuro;
     text-transform: uppercase;
@@ -45,5 +52,33 @@
     padding-left: 1rem;
     text-transform: capitalize;
     font-size: 1.2rem;
+    &_email {
+      text-transform: lowercase;
+    }
+  }
+  &__container {
+    &_ministerio {
+      border-top: 1px solid $colorFondo;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.responsable {
+  &__name {
+    color: $colorFondoOscuro;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--font-madurai);
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+  }
+  &__paragraph {
+    padding-left: 1rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    &_email {
+      text-transform: lowercase;
+    }
   }
 }
