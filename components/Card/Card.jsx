@@ -6,6 +6,7 @@ const Card = ({ institutions }) => {
   const router = useRouter();
 
   const urlApi = 'http://127.0.0.1:1337';
+  const urlApiDeploy = 'https://aidel-dev-app-c5t5b.ondigitalocean.app';
 
   return (
     <section className={style.card__container}>
@@ -19,7 +20,8 @@ const Card = ({ institutions }) => {
         >
           <div className={style.card__imageContainer}>
             <Image
-              src={`${urlApi}${institution.attributes.logo.data.attributes.url}`}
+              src={`${urlApiDeploy}${institution.attributes.logo.data.attributes.url}`}
+              // src={`${institution.attributes.logo.data.attributes.url}`}
               width={350}
               height={400}
               alt={institution.attributes.nombre}
