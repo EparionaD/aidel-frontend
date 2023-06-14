@@ -83,7 +83,7 @@ const Slug = async ({ params }) => {
               >
                 <h1 className={style.data__title}>pertenece a</h1>
                 <p className={`${style.data__paragraph}`}>
-                  {insti.attributes.ministerio.data.attributes.nombre}
+                  {insti.attributes.categoria.data.attributes.nombre}
                 </p>
               </div>
             </div>

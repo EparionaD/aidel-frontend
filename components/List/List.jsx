@@ -17,7 +17,7 @@ const List = ({ ministerios, institutions }) => {
       return;
     }
     const filterInstitucion = allInstituciones.filter(
-      (insti) => insti.attributes.ministerio.data.attributes.siglas === category
+      (insti) => insti.attributes.categoria.data.attributes.siglas === category
     );
     setAllInstituciones(filterInstitucion);
   };
