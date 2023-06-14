@@ -31,7 +31,11 @@ const Institution = async () => {
         title='instituciones'
         paragraph='Todas las instituciones que brindaron su apoyo para poder realizar este proyecto.'
       />
-      <List ministerios={ministerios} institutions={institutions} />
+      {ministerios ? (
+        <List ministerios={ministerios} institutions={institutions} />
+      ) : (
+        <h1>NO hay datos que mostrar</h1>
+      )}
     </main>
   );
 };
