@@ -35,7 +35,11 @@ const Slug = async ({ params }) => {
         <article key={insti.attributes.nombre} className={style.details}>
           <Hero
             text={false}
-            bground={`${urlApiDeploy}${insti.attributes.logo.data.attributes.url}`}
+            bground={
+              insti.attributes.logo.data === null
+                ? `https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/67206_870fbb513b.png`
+                : `${urlApiDeploy}${insti.attributes.logo.data.attributes.url}`
+            }
             title={insti.attributes.nombre}
           />
           <div className={style.details__container}>
@@ -90,7 +94,11 @@ const Slug = async ({ params }) => {
             <div className={style.details__social}>
               <div>
                 <Image
-                  src={`${urlApiDeploy}${insti.attributes.logo.data.attributes.url}`}
+                  src={
+                    insti.attributes.logo.data === null
+                      ? `https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/67206_870fbb513b.png`
+                      : `${urlApiDeploy}${insti.attributes.logo.data.attributes.url}`
+                  }
                   width={300}
                   height={300}
                   alt={insti.attributes.nombre}
@@ -101,25 +109,33 @@ const Slug = async ({ params }) => {
               <div className={style.responsable}>
                 <h1 className={style.responsable__name}>nombre</h1>
                 <p className={style.responsable__paragraph}>
-                  {insti.attributes.responsable.data.attributes.nombre}
+                  {insti.attributes.responsable.data === null
+                    ? '-'
+                    : insti.attributes.responsable.data.attributes.nombre}
                 </p>
               </div>
               <div className={style.responsable}>
                 <h1 className={style.responsable__name}>cargo</h1>
                 <p className={style.responsable__paragraph}>
-                  {insti.attributes.responsable.data.attributes.cargo}
+                  {insti.attributes.responsable.data === null
+                    ? '-'
+                    : insti.attributes.responsable.data.attributes.cargo}
                 </p>
               </div>
               <div className={style.responsable}>
                 <h1 className={style.responsable__name}>dirección</h1>
                 <p className={style.responsable__paragraph}>
-                  {insti.attributes.responsable.data.attributes.direccion}
+                  {insti.attributes.responsable.data === null
+                    ? '-'
+                    : insti.attributes.responsable.data.attributes.direccion}
                 </p>
               </div>
               <div className={style.responsable}>
                 <h1 className={style.responsable__name}>celular</h1>
                 <p className={style.responsable__paragraph}>
-                  {insti.attributes.responsable.data.attributes.celular}
+                  {insti.attributes.responsable.data === null
+                    ? '-'
+                    : insti.attributes.responsable.data.attributes.celular}
                 </p>
               </div>
               <div className={style.responsable}>
@@ -127,7 +143,9 @@ const Slug = async ({ params }) => {
                 <p
                   className={`${style.responsable__paragraph} ${style.responsable__paragraph_email}`}
                 >
-                  {insti.attributes.responsable.data.attributes.email}
+                  {insti.attributes.responsable.data === null
+                    ? '-'
+                    : insti.attributes.responsable.data.attributes.email}
                 </p>
               </div>
             </div>

@@ -20,7 +20,11 @@ const Card = ({ institutions }) => {
         >
           <div className={style.card__imageContainer}>
             <Image
-              src={`${urlApiDeploy}${institution.attributes.logo.data.attributes.url}`}
+              src={
+                institution.attributes.logo.data === null
+                  ? `https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/67206_870fbb513b.png`
+                  : `${urlApiDeploy}${institution.attributes.logo.data.attributes.url}`
+              }
               width={350}
               height={400}
               alt={institution.attributes.nombre}
