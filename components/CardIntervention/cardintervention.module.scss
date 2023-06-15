@@ -1,0 +1,60 @@
+@import '@/styles/_styles.scss';
+
+.card {
+  background-color: white;
+  min-height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1rem;
+  gap: 1rem;
+  &:hover {
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 3%;
+    padding: 1rem;
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 1rem 3rem;
+      margin-top: 2%;
+    }
+    @include desktop-large {
+      padding: 1rem 4.5rem;
+    }
+    @include desktop-xlarge {
+      padding: 1rem 7.5rem;
+    }
+  }
+  &__categorie {
+    display: flex;
+    flex-direction: column;
+  }
+  &__nombre {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+  &__title {
+    color: $colorFondoOscuro;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--font-madurai);
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+  }
+  &__text {
+    padding-left: 1rem;
+    text-transform: capitalize;
+    font-size: 1rem;
+  }
+  &__data {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    border-top: 1px solid $colorFondo;
+  }
+}

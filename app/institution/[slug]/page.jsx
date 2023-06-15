@@ -24,10 +24,10 @@ const Slug = async ({ params }) => {
   const urlApi = 'http://127.0.0.1:1337';
   const urlApiDeploy = 'https://aidel-dev-app-c5t5b.ondigitalocean.app';
 
-  const prueba = institution.map(
-    (insti) => insti.attributes.responsable.data.attributes.nombre
-  );
-  console.log(prueba);
+  // const prueba = institution.map(
+  //   (insti) => insti.attributes.responsable.data.attributes.nombre
+  // );
+  // console.log(prueba);
 
   return (
     <main>

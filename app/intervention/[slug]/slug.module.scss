@@ -1,0 +1,37 @@
+@import '@/styles/_styles.scss';
+
+.intervention {
+  background-color: $colorFondo;
+  &__container {
+    padding: 1rem;
+    @include desktop-xxlarge {
+      padding: 1rem 7.5rem;
+      width: 70%;
+    }
+  }
+  &__title {
+    color: $colorFondoOscuro;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--font-madurai);
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    @include desktop-xxlarge {
+      font-size: 1rem;
+    }
+  }
+  &__text {
+    padding-left: 1rem;
+    text-transform: capitalize;
+    font-size: 1rem;
+    @include desktop-xxlarge {
+      font-size: 1.2rem;
+    }
+  }
+  &__data {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
