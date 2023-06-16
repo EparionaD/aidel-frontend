@@ -1,5 +1,6 @@
 import { Hero } from '@/components';
 import { getInterventions } from '../services/intervention.services';
+import Markdown from 'marked-react';
 
 import style from './slug.module.scss';
 
@@ -20,6 +21,7 @@ const Slug = async ({ params }) => {
   const { slug } = params;
   const intervention = await fetchIntervention(slug);
   // console.log(intervention);
+
   return (
     <main>
       {intervention.map((interven) => (
@@ -72,9 +74,10 @@ const Slug = async ({ params }) => {
               </div>
               <div>
                 <p className={style.intervention__title}>actividad</p>
-                <p className={style.intervention__text}>
+                <Markdown>{interven.attributes.actividad}</Markdown>
+                {/* <p className={style.intervention__text}>
                   {interven.attributes.actividad}
-                </p>
+                </p> */}
               </div>
               <div>
                 <p className={style.intervention__title}>beneficiarios</p>
