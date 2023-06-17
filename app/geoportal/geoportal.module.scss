@@ -1,0 +1,12 @@
+@import '@/styles/_styles.scss';
+
+.geoportal {
+  width: 100%;
+  padding: 1rem;
+  @include desktop {
+    padding: 1.5rem 4rem;
+  }
+  @include desktop-xxlarge {
+    padding: 1.5rem 8rem;
+  }
+}
