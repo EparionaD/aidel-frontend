@@ -1,6 +1,6 @@
 import { Hero } from '@/components';
 import { getInterventions } from '../services/intervention.services';
-import Markdown from 'marked-react';
+// import Markdown from 'marked-react';
 
 import style from './slug.module.scss';
 
@@ -74,10 +74,10 @@ const Slug = async ({ params }) => {
               </div>
               <div>
                 <p className={style.intervention__title}>actividad</p>
-                <Markdown>{interven.attributes.actividad}</Markdown>
-                {/* <p className={style.intervention__text}>
+                {/* <Markdown>{interven.attributes.actividad}</Markdown> */}
+                <p className={style.intervention__text}>
                   {interven.attributes.actividad}
-                </p> */}
+                </p>
               </div>
               <div>
                 <p className={style.intervention__title}>beneficiarios</p>
