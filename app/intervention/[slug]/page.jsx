@@ -31,7 +31,7 @@ const Slug = async ({ params }) => {
         >
           <Hero
             text={false}
-            bground='https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/fondo2_edc377a556.jpg'
+            bground='https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/fondo2_72baef2e9e.jpg'
             title={interven.attributes.nombre}
           />
           <div className={style.intervention__container}>
