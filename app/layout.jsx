@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
             Routes.ABOUT,
             Routes.INSTITUTION,
             Routes.INTERVENTION,
-            Routes.GEOPORTAL,
-            Routes.REPOSITORIO,
+            // Routes.GEOPORTAL,
+            // Routes.REPOSITORIO,
           ]}
         />
         {children}
