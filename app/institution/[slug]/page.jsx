@@ -37,7 +37,7 @@ const Slug = async ({ params }) => {
             text={false}
             bground={
               insti.attributes.logo.data === null
-                ? `https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/fondo2_72baef2e9e.jpg`
+                ? `https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/quino_al_m_BQ_If_Klvow_M_unsplash_12ea10cab8.jpg`
                 : `${urlApiDeploy}${insti.attributes.logo.data.attributes.url}`
             }
             title={insti.attributes.nombre}
@@ -96,7 +96,7 @@ const Slug = async ({ params }) => {
                 <Image
                   src={
                     insti.attributes.logo.data === null
-                      ? `https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/67206_b0d6b8b2db.png`
+                      ? `https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/6e931d68bd719b9015e816a8e8904833_cefdfafeeb.jpg`
                       : `${urlApiDeploy}${insti.attributes.logo.data.attributes.url}`
                   }
                   width={300}

@@ -22,7 +22,7 @@ const Card = ({ institutions }) => {
             <Image
               src={
                 institution.attributes.logo.data === null
-                  ? `https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/67206_5bd1aebca3.png`
+                  ? `https://aidel-dev-app-c5t5b.ondigitalocean.app/uploads/6e931d68bd719b9015e816a8e8904833_cefdfafeeb.jpg`
                   : `${urlApiDeploy}${institution.attributes.logo.data.attributes.url}`
               }
               width={350}
